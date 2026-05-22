@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用正则 - RegexTool Online</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">.*</span>
+                <span class="logo-text">RegexTool</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                <a href="tester.html" class="nav-link" data-i18n="nav.tester">正则测试</a>
+                <a href="patterns.html" class="nav-link active" data-i18n="nav.patterns">常用正则</a>
+                <a href="tutorial.html" class="nav-link" data-i18n="nav.tutorial">案例教程</a>
+                <a href="reference.html" class="nav-link" data-i18n="nav.reference">完整参考</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle"><span id="langLabel">EN</span></button>
+                <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="patterns.title">常用正则表达式</h1>
+            <p class="page-subtitle" data-i18n="patterns.subtitle">精心整理的常用正则表达式，点击复制即可使用</p>
+        </div>
+    </div>
+
+    <div class="container patterns-container">
+        <div class="filter-tabs" id="filterTabs"></div>
+        <div id="patternsContent"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-copyright">© 2024 RegexTool Online</p>
+        </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/patterns.js"></script>
+</body>
+</html>
