@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegexTool Online - 在线正则表达式工具</title>
+    <meta name="description" content="在线正则表达式测试、学习和参考工具。提供实时匹配、常用正则表达式库和完整教程。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">.*</span>
+                <span class="logo-text">RegexTool</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active" data-i18n="nav.home">首页</a>
+                <a href="pages/tester.html" class="nav-link" data-i18n="nav.tester">正则测试</a>
+                <a href="pages/patterns.html" class="nav-link" data-i18n="nav.patterns">常用正则</a>
+                <a href="pages/tutorial.html" class="nav-link" data-i18n="nav.tutorial">案例教程</a>
+                <a href="pages/reference.html" class="nav-link" data-i18n="nav.reference">完整参考</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" title="Switch Language">
+                    <span id="langLabel">EN</span>
+                </button>
+                <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">掌握正则表达式</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">在线测试、学习和使用正则表达式的一站式工具平台</p>
+            <div class="hero-actions">
+                <a href="pages/tester.html" class="btn btn-primary" data-i18n="hero.startTest">开始测试</a>
+                <a href="pages/reference.html" class="btn btn-ghost" data-i18n="hero.learnMore">学习正则</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="features.title">功能特色</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title" data-i18n="features.realtime.title">实时匹配</h3>
+                    <p class="feature-desc" data-i18n="features.realtime.desc">输入即匹配，实时高亮显示匹配结果，支持全部正则标志</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title" data-i18n="features.library.title">常用正则库</h3>
+                    <p class="feature-desc" data-i18n="features.library.desc">精心整理的常用正则表达式，一键复制即可使用</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3 class="feature-title" data-i18n="features.tutorial.title">案例教程</h3>
+                    <p class="feature-desc" data-i18n="features.tutorial.desc">从简单到复杂的实战案例，快速掌握正则表达式</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3 class="feature-title" data-i18n="features.reference.title">完整参考</h3>
+                    <p class="feature-desc" data-i18n="features.reference.desc">涵盖所有正则语法的完整参考手册，简单易懂</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title" data-i18n="features.i18n.title">中英双语</h3>
+                    <p class="feature-desc" data-i18n="features.i18n.desc">支持中文和英文切换，满足不同用户需求</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title" data-i18n="features.replace.title">替换功能</h3>
+                    <p class="feature-desc" data-i18n="features.replace.desc">支持正则替换预览，快速验证替换结果</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Section -->
+    <section class="section quickstart-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="quickstart.title">快速开始</h2>
+            <div class="quickstart-grid">
+                <a href="pages/tester.html" class="quickstart-card">
+                    <div class="quickstart-number">1</div>
+                    <h3 data-i18n="quickstart.step1.title">测试正则</h3>
+                    <p data-i18n="quickstart.step1.desc">输入正则表达式和测试文本，实时查看匹配结果</p>
+                </a>
+                <a href="pages/patterns.html" class="quickstart-card">
+                    <div class="quickstart-number">2</div>
+                    <h3 data-i18n="quickstart.step2.title">查找常用</h3>
+                    <p data-i18n="quickstart.step2.desc">浏览常用正则表达式库，找到你需要的模式</p>
+                </a>
+                <a href="pages/tutorial.html" class="quickstart-card">
+                    <div class="quickstart-number">3</div>
+                    <h3 data-i18n="quickstart.step3.title">学习案例</h3>
+                    <p data-i18n="quickstart.step3.desc">通过实际案例学习正则表达式的使用技巧</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">.*</span>
+                <span class="logo-text">RegexTool Online</span>
+            </div>
+            <p class="footer-text" data-i18n="footer.desc">一个简单好用的在线正则表达式工具</p>
+            <p class="footer-copyright">© 2024 RegexTool Online. MIT License.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

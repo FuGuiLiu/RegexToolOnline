@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正则测试 - RegexTool Online</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-icon">.*</span>
+                <span class="logo-text">RegexTool</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                <a href="tester.html" class="nav-link active" data-i18n="nav.tester">正则测试</a>
+                <a href="patterns.html" class="nav-link" data-i18n="nav.patterns">常用正则</a>
+                <a href="tutorial.html" class="nav-link" data-i18n="nav.tutorial">案例教程</a>
+                <a href="reference.html" class="nav-link" data-i18n="nav.reference">完整参考</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle"><span id="langLabel">EN</span></button>
+                <button class="nav-hamburger" id="navHamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-i18n="tester.title">正则表达式测试器</h1>
+            <p class="page-subtitle" data-i18n="tester.subtitle">输入正则表达式和测试文本，实时查看匹配结果</p>
+        </div>
+    </div>
+
+    <div class="container tester-container">
+        <div class="tester-layout">
+            <div class="tester-panel">
+                <div class="panel-title" data-i18n="tester.pattern">正则表达式</div>
+                <div class="regex-input-row">
+                    <input type="text" class="regex-input" id="regexInput" placeholder="输入正则表达式..." data-i18n="tester.patternPlaceholder">
+                    <input type="text" class="flags-input" id="flagsInput" value="g" placeholder="flags">
+                </div>
+                <div class="flags-row">
+                    <label class="flag-check"><input type="checkbox" id="flagG" checked><code>g</code> <span data-i18n="tester.flagG">全局匹配</span></label>
+                    <label class="flag-check"><input type="checkbox" id="flagI"><code>i</code> <span data-i18n="tester.flagI">忽略大小写</span></label>
+                    <label class="flag-check"><input type="checkbox" id="flagM"><code>m</code> <span data-i18n="tester.flagM">多行模式</span></label>
+                    <label class="flag-check"><input type="checkbox" id="flagS"><code>s</code> <span data-i18n="tester.flagS">点匹配换行</span></label>
+                </div>
+                <div class="panel-title" data-i18n="tester.testText">测试文本</div>
+                <textarea class="test-textarea" id="testText" placeholder="输入要测试的文本..." data-i18n="tester.testPlaceholder"></textarea>
+                <div class="panel-title" style="margin-top:16px" data-i18n="tester.replace">替换模式</div>
+                <input type="text" class="replace-input" id="replaceInput" placeholder="输入替换字符串..." data-i18n="tester.replacePlaceholder">
+            </div>
+            <div class="tester-panel">
+                <div class="panel-title" data-i18n="tester.result">匹配结果</div>
+                <div class="result-area" id="matchResult"></div>
+                <div class="match-info" id="matchInfo" style="display:none"></div>
+                <div class="error-msg" id="errorMsg" style="display:none"></div>
+                <div class="panel-title" style="margin-top:20px" data-i18n="tester.replaceResult">替换结果</div>
+                <div class="result-area" id="replaceResult"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-copyright">© 2024 RegexTool Online</p>
+        </div>
+    </footer>
+
+    <script src="../js/i18n.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/tester.js"></script>
+</body>
+</html>
